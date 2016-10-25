@@ -6,4 +6,9 @@
 //  Copyright © 2016 Corbett, Grayson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Card
+{
+    
+}
