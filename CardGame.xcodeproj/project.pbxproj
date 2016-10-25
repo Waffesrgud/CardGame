@@ -12,6 +12,8 @@
 		732E20CA1DBFAD66007B4641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732E20C81DBFAD66007B4641 /* Main.storyboard */; };
 		732E20CC1DBFAD66007B4641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732E20CB1DBFAD66007B4641 /* Assets.xcassets */; };
 		732E20CF1DBFAD66007B4641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732E20CD1DBFAD66007B4641 /* LaunchScreen.storyboard */; };
+		732E20DA1DBFAFF3007B4641 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E20D91DBFAFF3007B4641 /* Card.swift */; };
+		732E20DC1DBFB003007B4641 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E20DB1DBFB003007B4641 /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		732E20CB1DBFAD66007B4641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732E20CE1DBFAD66007B4641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		732E20D01DBFAD66007B4641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732E20D91DBFAFF3007B4641 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		732E20DB1DBFB003007B4641 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		732E20C31DBFAD65007B4641 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
+				732E20D81DBFAF5F007B4641 /* Model */,
 				732E20C41DBFAD66007B4641 /* AppDelegate.swift */,
 				732E20C61DBFAD66007B4641 /* ViewController.swift */,
 				732E20C81DBFAD66007B4641 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				732E20D01DBFAD66007B4641 /* Info.plist */,
 			);
 			path = CardGame;
+			sourceTree = "<group>";
+		};
+		732E20D81DBFAF5F007B4641 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				732E20DB1DBFB003007B4641 /* PlayingCard.swift */,
+				732E20D91DBFAFF3007B4641 /* Card.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				732E20C71DBFAD66007B4641 /* ViewController.swift in Sources */,
+				732E20DA1DBFAFF3007B4641 /* Card.swift in Sources */,
+				732E20DC1DBFB003007B4641 /* PlayingCard.swift in Sources */,
 				732E20C51DBFAD66007B4641 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
