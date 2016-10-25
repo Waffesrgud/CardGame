@@ -58,13 +58,13 @@
 		732E20C31DBFAD65007B4641 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				732E20D81DBFAF5F007B4641 /* Model */,
 				732E20C41DBFAD66007B4641 /* AppDelegate.swift */,
 				732E20C61DBFAD66007B4641 /* ViewController.swift */,
 				732E20C81DBFAD66007B4641 /* Main.storyboard */,
 				732E20CB1DBFAD66007B4641 /* Assets.xcassets */,
 				732E20CD1DBFAD66007B4641 /* LaunchScreen.storyboard */,
 				732E20D01DBFAD66007B4641 /* Info.plist */,
+				732E20D81DBFAF5F007B4641 /* Model */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
