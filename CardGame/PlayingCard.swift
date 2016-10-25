@@ -10,5 +10,5 @@ import UIKit
 
 class PlayingCard : Card
 {
-    
+    print("Hello, world!")
 }
