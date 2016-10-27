@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73256E1E1DC2516700DB1502 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73256E1D1DC2516700DB1502 /* CardGameController.swift */; };
 		732E20C51DBFAD66007B4641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E20C41DBFAD66007B4641 /* AppDelegate.swift */; };
-		732E20C71DBFAD66007B4641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E20C61DBFAD66007B4641 /* ViewController.swift */; };
 		732E20CA1DBFAD66007B4641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732E20C81DBFAD66007B4641 /* Main.storyboard */; };
 		732E20CC1DBFAD66007B4641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732E20CB1DBFAD66007B4641 /* Assets.xcassets */; };
 		732E20CF1DBFAD66007B4641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732E20CD1DBFAD66007B4641 /* LaunchScreen.storyboard */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73256E1D1DC2516700DB1502 /* CardGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
 		732E20C11DBFAD65007B4641 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		732E20C41DBFAD66007B4641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		732E20C61DBFAD66007B4641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		732E20C91DBFAD66007B4641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		732E20CB1DBFAD66007B4641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732E20CE1DBFAD66007B4641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +39,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73256E1C1DC2515300DB1502 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73256E1D1DC2516700DB1502 /* CardGameController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		73256E201DC2521300DB1502 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				732E20C81DBFAD66007B4641 /* Main.storyboard */,
+				732E20CD1DBFAD66007B4641 /* LaunchScreen.storyboard */,
+				732E20CB1DBFAD66007B4641 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		732E20B81DBFAD65007B4641 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +76,9 @@
 		732E20C31DBFAD65007B4641 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
+				73256E201DC2521300DB1502 /* View */,
+				73256E1C1DC2515300DB1502 /* Controller */,
 				732E20C41DBFAD66007B4641 /* AppDelegate.swift */,
-				732E20C61DBFAD66007B4641 /* ViewController.swift */,
-				732E20C81DBFAD66007B4641 /* Main.storyboard */,
-				732E20CB1DBFAD66007B4641 /* Assets.xcassets */,
-				732E20CD1DBFAD66007B4641 /* LaunchScreen.storyboard */,
 				732E20D01DBFAD66007B4641 /* Info.plist */,
 				732E20D81DBFAF5F007B4641 /* Model */,
 			);
@@ -149,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				732E20C71DBFAD66007B4641 /* ViewController.swift in Sources */,
+				73256E1E1DC2516700DB1502 /* CardGameController.swift in Sources */,
 				732E20DA1DBFAFF3007B4641 /* Card.swift in Sources */,
 				732E20DC1DBFB003007B4641 /* PlayingCard.swift in Sources */,
 				732E20C51DBFAD66007B4641 /* AppDelegate.swift in Sources */,
@@ -302,6 +318,7 @@
 				732E20D51DBFAD66007B4641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
