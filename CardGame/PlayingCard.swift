@@ -109,10 +109,20 @@ class PlayingCard : Card
     {
         super.init()
 
-        frontImage = UIImage()
-        color = UIColor()
+        frontImage = UIImage(named: "cardfront")!
+        color = UIColor.blackColor()
         rank = 0
         suit = ""
+    }
+    
+    init(withRank: Int, ofSuit: String)
+    {
+        super.init()
+        frontImage = UIImage(named: "cardfront")!
+        color = UIColor.blackColor()
+        
+        rank = withRank
+        suit = ofSuit
     }
     
     override func toString() -> String
@@ -130,5 +140,15 @@ class PlayingCard : Card
     let description = "The card's rank is \(rank), is the color of \(color), and is of the \(suit) suit. The card is face \(facing) . The back of the card is \(self.getBackImage)."
     
     return description
+    }
+    
+    class func cardRanks() -> [String]
+    {
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func validSuits() -> [String]
+    {
+        return [ "Spades", "Hearts", "Clubs", "Diamonds"]
     }
 }

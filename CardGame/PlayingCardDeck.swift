@@ -12,6 +12,7 @@ import Foundation
 class PlayingCardDeck : Deck
     
 {
+    lazy var cards = [PlayingCard]()
     
     override init()
     {
