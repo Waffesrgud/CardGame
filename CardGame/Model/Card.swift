@@ -10,8 +10,8 @@ import UIKit
 
 class Card
 {
-    private var backImage : UIImage
-    private var isFaceUp : Bool
+    internal var backImage : UIImage
+    internal var isFaceUp : Bool
     
     init()
     {
