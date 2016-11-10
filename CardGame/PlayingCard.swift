@@ -52,6 +52,12 @@ class PlayingCard : Card
 
     }
     
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
+    }
+    
     func setSuit(suit: String) -> Void
     {
         self.suit = suit
@@ -110,7 +116,7 @@ class PlayingCard : Card
     
     class func validSuits() -> [String]
     {
-        return [ "♠️", "♥️", "♣️", "♦️"]
+        return ["♠️","♥️","♣️","♦️"]
     }
     
     class func maxRank() -> Int
