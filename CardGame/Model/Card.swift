@@ -36,12 +36,12 @@ class Card
         return isFaceUp
     }
     
-    func setBackImage(backImage : UIImage) -> Void
+    func setBackImage(_ backImage : UIImage) -> Void
     {
         self.backImage = backImage
     }
     
-    func setFaceUp(isFaceUp: Bool) -> Void
+    func setFaceUp(_ isFaceUp: Bool) -> Void
     {
         self.isFaceUp = isFaceUp
     }

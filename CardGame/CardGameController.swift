@@ -14,9 +14,9 @@ class CardGameController : UIViewController
     
     @IBOutlet weak var cardLabel: UILabel!
 
-    private lazy var currentDeck = PlayingCardDeck()
+    fileprivate lazy var currentDeck = PlayingCardDeck()
     
-    private lazy var clickCount = Int()
+    fileprivate lazy var clickCount = Int()
     
     override func viewDidLoad()
     {
@@ -26,14 +26,14 @@ class CardGameController : UIViewController
         print(otherTemp.toString())
     }
     
-    @IBAction func flipCard(sender: UIButton)
+    @IBAction func flipCard(_ sender: UIButton)
     {
         clickCount += 1
         let words = "Wowie, is this cookie clicker wow, you have \(clickCount) grandmas"
         cardLabel.text = words
         if let currentCard = currentDeck.drawCard()as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            cardButton.setTitle("\(currentCard.getCardData())", for: UIControlState())
         }
     }
 }

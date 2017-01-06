@@ -19,7 +19,7 @@ class Deck
         {
             randomIndex()
             //Removes the card from the random spot.
-            let removedCard = cards.removeAtIndex(randomSpot)
+            let removedCard = cards.remove(at: randomSpot)
             //Adds card to the end of the list.
             temp.append(removedCard)
         }
@@ -30,7 +30,7 @@ class Deck
     {
         for index in 1 ... cards.count/2
         {
-            cards.insert(cards.removeAtIndex(self.cards.count), atIndex: index*2)
+            cards.insert(cards.remove(at: self.cards.count), at: index*2)
         }
 
     }
@@ -44,7 +44,7 @@ class Deck
     {
         if self.cards.count > 0
         {
-            return cards.removeAtIndex(0)
+            return cards.remove(at: 0)
         }
         else
         {
@@ -57,7 +57,7 @@ class Deck
         if self.cards.count > 0
         {
             randomIndex()
-            return cards.removeAtIndex(randomSpot)
+            return cards.remove(at: randomSpot)
         }
         else
         {
